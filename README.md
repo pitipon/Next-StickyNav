@@ -19,5 +19,7 @@ yarn
 yarn dev
 ```
 
+open at localhost:3000
+
 ## References
 - [NextJs Redux Saga Example](https://github.com/zeit/next.js/tree/master/examples/with-redux-saga)
