@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "license": "ISC",
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
+    "dev": "next ./src/components",
+    "build": "next build ./src/components",
+    "start": "next start ./src/components"
   },
   "dependencies": {
     "es6-promise": "4.1.1",
