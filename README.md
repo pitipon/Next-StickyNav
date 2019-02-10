@@ -19,4 +19,4 @@ yarn dev
 ```
 
 ## References
-- [https://jsonplaceholder.typicode.com/users](https://jsonplaceholder.typicode.com/users)
+- [Redux Saga Example](https://github.com/zeit/next.js/tree/master/examples/with-redux-saga)
