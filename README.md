@@ -1,10 +1,11 @@
 
-# Next Template with Redux
+# NextJS Template with Redux & Saga
 
 ### Description
 
-- Restructure to src and dist
 - Redux and Saga
+- Restructure folder
+
 
 ### Usage
 
@@ -19,4 +20,4 @@ yarn dev
 ```
 
 ## References
-- [Redux Saga Example](https://github.com/zeit/next.js/tree/master/examples/with-redux-saga)
+- [NextJs Redux Saga Example](https://github.com/zeit/next.js/tree/master/examples/with-redux-saga)
