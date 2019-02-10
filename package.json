@@ -8,8 +8,10 @@
     "start": "next start ./src/components"
   },
   "dependencies": {
+    "@zeit/next-less": "^1.0.1",
     "es6-promise": "4.1.1",
     "isomorphic-unfetch": "2.0.0",
+    "less": "^3.9.0",
     "next": "latest",
     "next-redux-saga": "3.0.0",
     "next-redux-wrapper": "2.0.0",

@@ -4,6 +4,8 @@ import { connect } from 'react-redux'
 import Counter from './counter'
 import Clock from './clock'
 
+import "../../styles/styles.less"
+
 function Page ({
   error,
   lastUpdate,
@@ -15,7 +17,7 @@ function Page ({
 }) {
   return (
     <div>
-      <h1>{title}</h1>
+      <div className="example">{title}</div>
       <Clock lastUpdate={lastUpdate} light={light} />
       <Counter />
       <nav>
