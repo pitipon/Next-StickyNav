@@ -1,9 +1,12 @@
 import Link from 'next/link'
 import { connect } from 'react-redux'
 
+// Components
 import Counter from './counter'
 import Clock from './clock'
+import { Button } from 'antd'
 
+// styles
 import "../../styles/styles.less"
 
 function Page ({
@@ -18,6 +21,9 @@ function Page ({
   return (
     <div>
       <div className="example">{title}</div>
+      <div>
+        <Button type="primary" icon="download" size="large">Download</Button>
+      </div>
       <Clock lastUpdate={lastUpdate} light={light} />
       <Counter />
       <nav>
