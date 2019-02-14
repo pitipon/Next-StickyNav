@@ -10,8 +10,8 @@ export default () => (
       body { 
         margin: 0;
         padding: 0;
-        color: #2D4054 !important;
-        font-size: 14px !important;
+        color: #2D4054 ;
+        font-size: 14px ;
         font-family: Avenir, Helvetica, Arial, sans-serif !important;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;

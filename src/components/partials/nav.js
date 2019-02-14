@@ -10,17 +10,19 @@ class Nav extends React.Component {
     }
 
     handleScroll() {
+        console.log("scrollY", window.scrollY)
         this.setState({scroll: window.scrollY});
     }
 
     componentDidMount() {
         const el = document.querySelector('nav');
+        console.log("TOP", el.offsetTop,"Height", el.offsetHeight);
         this.setState({top: el.offsetTop, height: el.offsetHeight});
         window.addEventListener('scroll', this.handleScroll);
     }
 
     componentDidUpdate() {
-        this.state.scroll > this.state.top ? 
+        this.state.scroll > this.state.top  ? 
             document.body.style.paddingTop = `${this.state.height}px` :
             document.body.style.paddingTop = 0;
     }
