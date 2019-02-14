@@ -1,8 +1,19 @@
 import React from 'react'
-import { connect } from 'react-redux'
 
+// Redux
+import { connect } from 'react-redux'
 import { loadData, startClock, tickClock } from '../../redux/actions/actions'
-import Page from '../partials/page'
+
+// Layout
+import Layout from '../layouts/main'
+
+// Components
+import Counter from '../partials/counter'
+import Nav from '../partials/nav'
+import Banner from '../partials/banner'
+
+// Style
+import "../../styles/components/pages/index.less"
 
 class Index extends React.Component {
   static async getInitialProps (props) {
@@ -12,7 +23,7 @@ class Index extends React.Component {
     if (!store.getState().placeholderData) {
       store.dispatch(loadData())
     }
-
+    console.log(5555, isServer)
     return { isServer }
   }
 
@@ -21,8 +32,17 @@ class Index extends React.Component {
   }
 
   render () {
-    return <Page title='Index Page' linkTo='/other' NavigateTo='Other Page' />
+    return (
+      <Layout>
+        <Banner />
+        <Nav/>
+        <Counter />
+        <div className="block-content">
+          Content Block
+        </div>
+      </Layout>
+    )
   }
 }
 
-export default connect()(Index)
+export default connect(state => state)(Index)
