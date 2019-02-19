@@ -1,5 +1,5 @@
 
-# NextJS Template with AntDesign
+# NextJS StickyNav
 
 ### Description
 
@@ -24,7 +24,7 @@ yarn dev
 open at localhost:3000
 
 ## Screenshot
-![](http://)
+![](https://github.com/pitipon/Next-StickyNav/blob/master/readme/img/screenshot.gif?raw=true)
 
 
 ## References
